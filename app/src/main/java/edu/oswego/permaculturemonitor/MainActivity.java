@@ -32,7 +32,11 @@ public class MainActivity extends AppCompatActivity {
                 Intent tempIntent = new Intent(MainActivity.this, TempActivity.class);
 
                 // start the new actitivy
-                startActivity(tempIntent);
+                try {
+                    startActivity(tempIntent);
+                } catch (Exception e) {
+                    setContentView(R.layout.error);
+                }
             }
         });
 
@@ -48,7 +52,11 @@ public class MainActivity extends AppCompatActivity {
                 Intent humidityIntent = new Intent(MainActivity.this, HumidityActivity.class);
 
                 // start the new actitivy
-                startActivity(humidityIntent);
+                try {
+                    startActivity(humidityIntent);
+                } catch (Exception e) {
+                    setContentView(R.layout.error);
+                }
             }
         });
 
@@ -63,7 +71,11 @@ public class MainActivity extends AppCompatActivity {
                 Intent soilIntent = new Intent(MainActivity.this, SoilActivity.class);
 
                 // start the new actitivy
-                startActivity(soilIntent);
+                try {
+                    startActivity(soilIntent);
+                } catch (Exception e) {
+                    setContentView(R.layout.error);
+                }
             }
         });
 
@@ -78,7 +90,11 @@ public class MainActivity extends AppCompatActivity {
                 Intent phIntent = new Intent(MainActivity.this, PhActivity.class);
 
                 // start the new actitivy
-                startActivity(phIntent);
+                try {
+                    startActivity(phIntent);
+                } catch (Exception e) {
+                    setContentView (R.layout.error);
+                }
             }
         });
 
@@ -94,7 +110,11 @@ public class MainActivity extends AppCompatActivity {
                 Intent aboutIntent = new Intent(MainActivity.this, AboutActivity.class);
 
                 // start the new actitivy
-                startActivity(aboutIntent);
+                try {
+                    startActivity(aboutIntent);
+                } catch (Exception e) {
+                    setContentView (R.layout.error);
+                }
             }
         });
 
