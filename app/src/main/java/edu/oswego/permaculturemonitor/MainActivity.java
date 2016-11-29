@@ -33,7 +33,8 @@ public class MainActivity extends AppCompatActivity {
 
                 // start the new actitivy
                 try {
-                    startActivity(tempIntent);
+                    //startActivity(tempIntent);
+                    setContentView(R.layout.temp_layout);
                 } catch (Exception e) {
                     setContentView(R.layout.error);
                 }
@@ -53,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
 
                 // start the new actitivy
                 try {
-                    startActivity(humidityIntent);
+                    //startActivity(humidityIntent);
+                    setContentView(R.layout.humidity_layout);
                 } catch (Exception e) {
                     setContentView(R.layout.error);
                 }
@@ -72,7 +74,8 @@ public class MainActivity extends AppCompatActivity {
 
                 // start the new actitivy
                 try {
-                    startActivity(soilIntent);
+                    //startActivity(soilIntent);
+                    setContentView(R.layout.soil_layout);
                 } catch (Exception e) {
                     setContentView(R.layout.error);
                 }
@@ -91,7 +94,8 @@ public class MainActivity extends AppCompatActivity {
 
                 // start the new actitivy
                 try {
-                    startActivity(phIntent);
+                    setContentView(R.layout.ph_layout);
+                    //startActivity(phIntent);
                 } catch (Exception e) {
                     setContentView (R.layout.error);
                 }
@@ -111,7 +115,8 @@ public class MainActivity extends AppCompatActivity {
 
                 // start the new actitivy
                 try {
-                    startActivity(aboutIntent);
+                    setContentView(R.layout.about_layout);
+                    //startActivity(aboutIntent);
                 } catch (Exception e) {
                     setContentView (R.layout.error);
                 }
